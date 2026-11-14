@@ -1,0 +1,195 @@
+/* RESET BASIC & VARIABLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #4a90e2;
+  --secondary-color: #357abd;
+  --bg-color: #f4f7f6;
+  --card-bg: #ffffff;
+  --text-color: #333333;
+  --text-muted: #666666;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: var(--card-bg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  z-index: 100;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.navbar nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.navbar nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar nav a:hover {
+  color: var(--primary-color);
+}
+
+/* CONTAINER & CARD LAYOUT */
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.card {
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.section-title {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 8px;
+}
+
+/* SEKSI PROFIL */
+.profil-card {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--primary-color);
+}
+
+.profil-info h1 {
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+}
+
+.profil-info .tagline {
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* SEKSI PENDIDIKAN (TIMELINE) */
+.timeline-item {
+  border-left: 3px solid var(--primary-color);
+  padding-left: 15px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.timeline-item h3 {
+  font-size: 1.1rem;
+}
+
+.timeline-item .tahun {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+/* SEKSI ORGANISASI (GRID) */
+.grid-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.grid-item {
+  background-color: #f9fbfd;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #eef2f5;
+}
+
+.grid-item h3 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.grid-item .sub-text {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.grid-item ul {
+  padding-left: 18px;
+  font-size: 0.95rem;
+}
+
+/* SEKSI CITA-CITA */
+.cita-cita-card .quote {
+  font-style: italic;
+  font-size: 1.1rem;
+  background-color: #eef6ff;
+  padding: 15px 20px;
+  border-left: 4px solid var(--primary-color);
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.target-box h4 {
+  margin-bottom: 10px;
+}
+
+.target-box ul {
+  padding-left: 20px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* RESPONSIVE UNTUK HP */
+@media (max-width: 600px) {
+  .profil-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
