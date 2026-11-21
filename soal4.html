@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz JavaScript - Return Statement</title>
+    <link rel="stylesheet" href="soal4.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Quiz JavaScript</h1>
+
+        <h2>
+            Apa yang terjadi jika fungsi tidak memiliki
+            return statement?
+        </h2>
+
+        <p class="instruction">PILIH DUA JAWABAN YANG BENAR!</p>
+
+        <div class="code-box">
+            <pre>
+function noReturn() {
+    let name = "Bob";
+}
+
+let result = noReturn();
+
+console.log(result);
+            </pre>
+        </div>
+
+        <div class="options">
+
+            <label>
+                <input type="checkbox" name="answer" value="1">
+                result akan berisi undefined.
+            </label>
+
+            <label>
+                <input type="checkbox" name="answer" value="2">
+                Fungsi akan mengembalikan nilai null.
+            </label>
+
+            <label>
+                <input type="checkbox" name="answer" value="3">
+                Fungsi akan menghasilkan error.
+            </label>
+
+            <label>
+                <input type="checkbox" name="answer" value="4">
+                Fungsi akan mengembalikan undefined secara implisit.
+            </label>
+
+        </div>
+
+        <button onclick="checkAnswer()">
+            Periksa Jawaban
+        </button>
+
+        <div id="result"></div>
+
+        <div class="explanation">
+            <h3>Penjelasan:</h3>
+
+            <p>
+                Jika sebuah fungsi tidak memiliki return statement,
+                JavaScript secara otomatis akan mengembalikan
+                nilai undefined.
+            </p>
+
+            <p>
+                Karena fungsi noReturn() tidak memiliki return,
+                maka nilai yang dikembalikan adalah undefined.
+            </p>
+
+            <p>
+                Variabel result menampung nilai tersebut,
+                sehingga result juga berisi undefined.
+            </p>
+
+            <h3 class="correct">Jawaban yang benar:</h3>
+
+            <p>✓ Opsi 1. result akan berisi undefined.</p>
+            <p>✓ Opsi 4. Fungsi akan mengembalikan undefined secara implisit.</p>
+
+            <h3>Output Program:</h3>
+
+            <div class="output">
+                undefined
+            </div>
+        </div>
+
+    </div>
+
+    <script src="soal4.js"></script>
+
+</body>
+</html>

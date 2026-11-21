@@ -1,0 +1,129 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    width: 100%;
+    max-width: 650px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #5b4bdb;
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 19px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.instruction {
+    color: #e67e22;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.code-box {
+    background: #222;
+    color: #00ff99;
+    padding: 18px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow-x: auto;
+}
+
+.code-box pre {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.options label {
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    line-height: 1.5;
+}
+
+.options label:hover {
+    background: #f0efff;
+    border-color: #667eea;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+    accent-color: #667eea;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 25px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #5145bd;
+}
+
+#result {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    line-height: 1.6;
+}
+
+.explanation {
+    margin-top: 25px;
+    padding: 20px;
+    background: #f1f3ff;
+    border-radius: 10px;
+    line-height: 1.8;
+}
+
+.explanation h3 {
+    margin: 15px 0 10px;
+}
+
+.correct {
+    color: green;
+}
+
+.output {
+    background: #222;
+    color: #00ff99;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+}

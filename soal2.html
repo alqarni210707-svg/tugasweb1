@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output JavaScript</title>
+    <link rel="stylesheet" href="soal2.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Quiz JavaScript</h1>
+
+        <h2>Apa output dari kode berikut?</h2>
+
+        <div class="code-box">
+            <pre>
+const greet = name => "Hello, " + name + "!";
+
+console.log(greet("Bob"));
+            </pre>
+        </div>
+
+        <h3>Pilihan Jawaban:</h3>
+
+        <div class="options">
+            <button onclick="checkAnswer(1)">
+                Opsi 1. Hello, Name!
+            </button>
+
+            <button onclick="checkAnswer(2)">
+                Opsi 2. Bob!
+            </button>
+
+            <button onclick="checkAnswer(3)">
+                Opsi 3. Hello, !
+            </button>
+
+            <button onclick="checkAnswer(4)">
+                Opsi 4. Hello, Bob!
+            </button>
+        </div>
+
+        <div id="result"></div>
+
+        <div class="explanation">
+            <h3>Penjelasan:</h3>
+            <p>
+                Kode tersebut menggunakan arrow function versi ringkas
+                yang langsung mengembalikan nilai.
+            </p>
+            <p>
+                Saat greet("Bob") dipanggil, parameter name diisi
+                dengan string "Bob".
+            </p>
+            <p>
+                Fungsi menggabungkan "Hello, " + "Bob" + "!",
+                sehingga menghasilkan:
+            </p>
+            <h3 class="answer">Hello, Bob!</h3>
+        </div>
+    </div>
+
+    <script src="soal2.js"></script>
+</body>
+</html>

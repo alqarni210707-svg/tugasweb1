@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Deklarasi Function</title>
+    <link rel="stylesheet" href="soal3.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Quiz JavaScript</h1>
+
+        <h2>
+            Pilih elemen atau bagian yang WAJIB ada
+            ketika kita mendeklarasikan sebuah fungsi?
+        </h2>
+
+        <p class="instruction">Pilih DUA jawaban yang benar!</p>
+
+        <div class="options">
+            <label>
+                <input type="checkbox" name="answer" value="1">
+                Blok kode (function body).
+            </label>
+
+            <label>
+                <input type="checkbox" name="answer" value="2">
+                Argumen fungsi.
+            </label>
+
+            <label>
+                <input type="checkbox" name="answer" value="3">
+                Nama fungsi.
+            </label>
+
+            <label>
+                <input type="checkbox" name="answer" value="4">
+                Return statement.
+            </label>
+        </div>
+
+        <button onclick="checkAnswer()">Periksa Jawaban</button>
+
+        <div id="result"></div>
+
+        <div class="explanation">
+            <h3>Penjelasan:</h3>
+
+            <p>
+                Berdasarkan materi Deklarasi Function,
+                terdapat tiga istilah yang perlu dipahami:
+            </p>
+
+            <ul>
+                <li>Function keyword</li>
+                <li>Identifier (nama fungsi)</li>
+                <li>Function body (blok kode)</li>
+            </ul>
+
+            <p>
+                Argumen dan return statement bersifat opsional.
+            </p>
+
+            <h3 class="correct">
+                Jawaban benar:
+            </h3>
+
+            <p>✓ Blok kode (function body).</p>
+            <p>✓ Nama fungsi.</p>
+        </div>
+    </div>
+
+    <script src="soal3.js"></script>
+</body>
+</html>
